@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap');
+
+:root {
+    --background-color: #121212;;
+    --background-color-white: #fff;
+    --text-color: #F9FAF8;
+    --border-color: #dddddd;
+    --text-color-black:  #1F2937;
+    --text-color-blacker: #121212;
+    --text-color-alternative: #E5E7EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Work Sans',sans-serif;
+    background: var(--background-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 70px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul,
+.media,
+.search input,
+.search button {
+    margin-top: 14px;
+    padding: 10px 0px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header a {
+    color: var(--text-color );
+}
+
+li a {
+    font-family: 'Roboto', sans-serif;
+    font-size:17px;
+}
+
+i, span {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Spicy Rice', sans-serif;
+    font-size: 40px;
+}
+
+.logo img {
+    max-width: 50px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.search form {
+    display: flex;
+    margin: 0;
+}
+
+.search input {
+    border: 1px solid var(--border-color);
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.search input:hover {
+    border: 1px solid #72a0d4;
+}
+
+.search button {
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.hero-img {
+    border: 3px solid var(--border-color);
+    border-radius: 10px;
+    max-width: 1000px;
+    height: 350px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.hero-text h1{
+    margin-bottom: 50px;
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: bolder;
+}
+
+.hero-text p{
+    padding-bottom: .3rem;
+    color: #E5E7EB;
+    font-size: 16px;
+}
+
+.novidades {
+    background: var(--background-color-white);
+}
+
+.novi_title {
+    display: flex;
+    justify-content: center;
+}
+
+.title-txt {
+    color: var(--text-color-blacker);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background: #fff;
+}
+
+.item {
+    width: 250px;
+    height: 250px;
+    border: 4px solid #333;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    margin-bottom: 10px;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.imgg {
+    width: 250px;
+    height: 250px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.item:after {
+    width:100%;
+    height:100%;
+    opacity:0;
+    border-radius:5px;
+    box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+.item:hover::after{
+    opacity:1;
+  }
+
+.item:hover{
+    transform:scale(1.25,1.25);
+}
+
+.info-item {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.promocoes {
+    background: #fff;
+}

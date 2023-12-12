@@ -62,7 +62,12 @@ li a {
     font-size:17px;
 }
 
-i, span {
+i {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+span {
     color: var(--checkout-red);
     cursor: pointer;
 }
